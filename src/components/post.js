@@ -7,27 +7,15 @@ import { rhythm } from "../utils/typography"
 import { colors } from "../utils/theme"
 
 const Styled = styled.div`
-  h1 {
-    margin-bottom: ${rhythm(1 / 2)};
-  }
-
-  h1,
-  h2,
-  h3 {
-    color: ${colors.secondary};
-    font-family: Merriweather;
-  }
-
-  small {
-    display: block;
-    margin-bottom: ${rhythm(1)};
-  }
-
   a {
     color: ${colors.primary};
     :hover {
       text-decoration: underline;
     }
+  }
+
+  small {
+    margin-bottom: ${rhythm(1)}
   }
 `
 

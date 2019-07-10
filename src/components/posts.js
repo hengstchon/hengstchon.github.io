@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "./layout"
-import { rhythm } from "../utils/typography"
 import { colors } from "../utils/theme"
 
 const StyledLink = styled(Link)`
@@ -15,16 +14,11 @@ const StyledLink = styled(Link)`
 
 const Styled = styled.div`
   h2 {
-    margin-bottom: ${rhythm(1 / 4)};
+    margin-bottom: .5rem
   }
 
   small {
-    display: block;
-    margin-bottom: ${rhythm(0.5)};
-  }
-
-  p {
-    line-height: 1.6;
+    margin-bottom: .6rem
   }
 `
 

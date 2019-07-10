@@ -1,6 +1,6 @@
 ---
 title: Markdown Reference
-date: 2012-01-01
+date: 2019-07-10
 ---
 
 # Markdown For Typora

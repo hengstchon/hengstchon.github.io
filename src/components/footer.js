@@ -12,7 +12,7 @@ const Styled = styled.div`
     justify-content: space-between;
     list-style: none;
     margin-left: 0;
-    padding: 0 ${rhythm(0.3)};
+    padding: 0 ${rhythm(0.2)};
   }
 `
 

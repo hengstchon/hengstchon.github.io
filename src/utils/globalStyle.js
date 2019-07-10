@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: ${colors.background};
     color: ${colors.text};
+    font-family: system-ui, sans-serif;
   }
 
   a {
@@ -20,6 +21,7 @@ export const GlobalStyle = createGlobalStyle`
 
   small {
     font-family: ${fonts.small};
+    display: block;
   }
 
   hr {
@@ -33,5 +35,19 @@ export const GlobalStyle = createGlobalStyle`
 
   pre {
     margin-bottom: ${rhythm(10)}
+  }
+
+  h1 {
+    margin: 0 0 0.5em 0;
+    color: ${colors.secondary};
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1em 0 0.5em 0;
+    color: ${colors.secondary};
   }
 `
