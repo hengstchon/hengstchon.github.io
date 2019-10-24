@@ -3,12 +3,8 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.8,
-  headerFontFamily: ["Noto Serif SC", "-apple-system", "serif"],
+  headerFontFamily: ["-apple-system", "serif"],
   bodyFontFamily: ["-apple-system", "sans-serif"],
-  googleFonts: [
-    { name: "Merriweather", styles: [400, 500, 700] },
-    { name: "Noto Serif SC", styles: [400, 700] },
-  ],
   scaleRatio: 2,
 })
 

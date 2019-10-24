@@ -28,7 +28,7 @@ const Cursor = styled.span`
   height: 1em;
   background: ${colors.primary};
   margin-left: 0.3em;
-  margin-bottom: -0.07em;
+  margin-bottom: -0.2em;
   border-radius: 1px;
   animation: ${cursor} 1.5s infinite;
 `

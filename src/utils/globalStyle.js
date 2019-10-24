@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import { rhythm } from "../utils/typography"
-import { colors, fonts } from "./theme"
+import { colors } from "./theme"
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -16,11 +16,10 @@ export const GlobalStyle = createGlobalStyle`
   blockquote {
     border-left: 4px solid ${colors.muted};
     padding-left: ${rhythm(1)};
-    opacity: 0.6;
+    opacity: 0.7;
   }
 
   small {
-    font-family: ${fonts.small};
     display: block;
   }
 
@@ -33,10 +32,6 @@ export const GlobalStyle = createGlobalStyle`
     padding-top: ${rhythm(0.3)};
   }
 
-  pre {
-    margin-bottom: ${rhythm(10)}
-  }
-
   h1 {
     margin: 0 0 0.5em 0;
     color: ${colors.secondary};
@@ -47,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    margin: 1em 0 0.5em 0;
+    margin: 1em 0;
     color: ${colors.secondary};
   }
 `
