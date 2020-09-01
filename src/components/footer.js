@@ -21,7 +21,9 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 
   :hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid ${colors.secondary} !important;
+    padding-bottom: 2px;
   }
 `
 

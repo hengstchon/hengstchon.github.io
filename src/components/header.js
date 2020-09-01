@@ -7,11 +7,11 @@ import { colors } from "../utils/theme"
 
 const Mark = styled.span`
   margin-right: 0.3em;
-  color: ${colors.text};
+  color: ${colors.primary};
 `
 
 const StyledLink = styled(Link)`
-  color: ${colors.text};
+  color: ${colors.primary};
   :hover {
     text-decoration: none;
   }
@@ -26,38 +26,27 @@ const Cursor = styled.span`
   display: inline-block;
   width: 0.3em;
   height: 1em;
-  background: ${colors.primary};
+  background: ${colors.secondary};
   margin-left: 0.3em;
   margin-bottom: -0.2em;
   border-radius: 1px;
   animation: ${cursor} 1.5s infinite;
 `
 
-const IndexHeader = styled.h1`
+const Header = styled.h1`
   margin-bottom: ${rhythm(2)};
-`
-
-const PostHeader = styled.h3`
-  margin-bottom: ${rhythm(1.5)};
 `
 
 const Title = ({ title }) => (
   <Fragment>
-    <Mark>></Mark>
-    <StyledLink>{title}</StyledLink>
+    <Mark>&gt;</Mark>
+    <StyledLink to="/">{title}</StyledLink>
     <Cursor />
   </Fragment>
 )
 
-const rootPath = `${__PATH_PREFIX__}/`
-
-export default ({ title, location }) =>
-  location.pathname === rootPath ? (
-    <IndexHeader>
-      <Title title={title} />
-    </IndexHeader>
-  ) : (
-    <PostHeader>
-      <Title title={title} />
-    </PostHeader>
-  )
+export default ({ title }) => (
+  <Header>
+    <Title title={title} />
+  </Header>
+)

@@ -6,19 +6,21 @@ import Layout from "./layout"
 import { colors } from "../utils/theme"
 
 const StyledLink = styled(Link)`
-  color: ${colors.secondary};
+  color: ${colors.primary};
   :hover {
-    color: ${colors.primary};
+    text-decoration: none;
+    border-bottom: 1px solid ${colors.primary};
+    padding-bottom: 2px;
   }
 `
 
 const Styled = styled.div`
   h2 {
-    margin-bottom: .5rem
+    margin-bottom: 0.5rem;
   }
 
   small {
-    margin-bottom: .6rem
+    margin-bottom: 0.6rem;
   }
 `
 

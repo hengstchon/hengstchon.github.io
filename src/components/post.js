@@ -10,12 +10,14 @@ const Styled = styled.div`
   a {
     color: ${colors.primary};
     :hover {
-      text-decoration: underline;
+      text-decoration: none;
+      border-bottom: 1px solid ${colors.primary};
+      padding-bottom: 2px;
     }
   }
 
   small {
-    margin-bottom: ${rhythm(1)}
+    margin-bottom: ${rhythm(1)};
   }
 `
 
