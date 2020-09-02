@@ -15,7 +15,7 @@ const StyledLink = styled(Link)`
 `
 
 const Styled = styled.div`
-  h2 {
+  h3 {
     margin-bottom: 0.5rem;
   }
 
@@ -29,11 +29,11 @@ export default ({ location, posts, siteTitle }) => (
     {posts.map(({ node }) => (
       <Fragment key={node.fields.slug}>
         <Styled>
-          <h2>
+          <h3>
             <StyledLink to={node.fields.slug}>
               {node.frontmatter.title || node.fields.slug}
             </StyledLink>
-          </h2>
+          </h3>
           <small>{node.frontmatter.date}</small>
           <p>{node.excerpt}</p>
         </Styled>

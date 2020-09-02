@@ -7,11 +7,11 @@ import { colors } from "../utils/theme"
 
 const Mark = styled.span`
   margin-right: 0.3em;
-  color: ${colors.primary};
+  color: ${colors.secondary};
 `
 
 const StyledLink = styled(Link)`
-  color: ${colors.primary};
+  color: ${colors.secondary};
   :hover {
     text-decoration: none;
   }
@@ -26,7 +26,7 @@ const Cursor = styled.span`
   display: inline-block;
   width: 0.3em;
   height: 1em;
-  background: ${colors.secondary};
+  background: ${colors.text};
   margin-left: 0.3em;
   margin-bottom: -0.2em;
   border-radius: 1px;
